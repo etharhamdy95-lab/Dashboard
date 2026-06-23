@@ -1,0 +1,20 @@
+body{
+    background: #232526;  
+background: -webkit-linear-gradient(to right, #414345, #232526); 
+background: linear-gradient(to right, #414345, #232526); 
+font-family: "Oswald", sans-serif;
+}
+.links .card
+{
+    background-color: #f49e7c;
+    margin-bottom: 10px;
+}
+.nav-tabs .nav-link{
+    color: #000;
+}
+.nav-tabs .nav-link.active{
+    color: red;
+}
+table .table{
+    width: max-content;
+}

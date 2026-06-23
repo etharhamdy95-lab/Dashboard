@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./../assets/css/all.css">
+    <link rel="stylesheet" href="./../assets/css/bootstarp.min.css">
+    <link rel="stylesheet" href="./../assets/css/global.css">
+    <link rel="stylesheet" href="./../assets/css/fonts.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="./../index.html" style="width: 10%;">
+                <img src="./../assets/images/dashboard.jpeg" alt class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ethar Hamdy
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./../padgs/dashboard.html">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="./register.html">Create new user</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="Dashboard" class="mb-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 info">
+                        <div class="item">
+                            <div class="card py-3 px-4 rounded-4">
+                                <img src="./../assets/images/defult.jpeg" class="card-img-top m-auto d-block rounded-c" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center"><i class="fa-solid fa-pen-to-square text-info fs-6" data-bs-toggle="modal" data-bs-target="#editName"></i>Ethar Hamdy</h5>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="item">
+                                                <h6><i class="fa-solid fa-pen-to-square text-info fs-6" data-bs-toggle="modal" data-bs-target="#editEmail"></i>Email :</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="item">
+                                                <p>ethathamdy95@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="item">
+                                                <h6><i class="fa-solid fa-pen-to-square text-info fs-6" data-bs-toggle="modal" data-bs-target="#editgender"></i>Gender :</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="item">
+                                                <p>Female</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="item">
+                                                <h6><i class="fa-solid fa-pen-to-square text-info fs-6" data-bs-toggle="modal" data-bs-target="#editPassword"></i>Password :</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="item">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-9 links">
+                    <div class="item bg-light py-3 px-4 rounded-4">
+                        <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="admins-tab" data-bs-toggle="tab" data-bs-target="#admins-tab-pane" type="button" role="tab" aria-controls="admins-tab-pane" aria-selected="true">Admins</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="clients-tab" data-bs-toggle="tab" data-bs-target="#clients-tab-pane" type="button" role="tab" aria-controls="clients-tab-pane" aria-selected="false">Clients</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="products-tab" data-bs-toggle="tab" data-bs-target="#products-tab-pane" type="button" role="tab" aria-controls="products-tab-pane" aria-selected="false">Products</button>
+                                </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active " id="admins-tab-pane" role="tabpanel" aria-labelledby="admins-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="card py-3 px-4 rounded-4">
+                                                <img src="./../assets/images/admin.png" class="card-img-top m-auto rounded" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-center">Ahmed Mohamed</h5>
+                                                    <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Email :</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="item">
+                                                                <p>am@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Gender :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Male</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-danger w-100">ban</button>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="card py-3 px-4 rounded-4">
+                                                <img src="./../assets/images/admin.png" class="card-img-top m-auto rounded" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                                <div class="card-body">
+                                                <h5 class="card-title text-center">Tamer Mohamed</h5>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Email :</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="item">
+                                                                <p>tm@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Gender :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Male</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-danger w-100">ban</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="card py-3 px-4 rounded-4">
+                                                <img src="./../assets/images/admin.png" class="card-img-top m-auto rounded" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                                <div class="card-body">
+                                                <h5 class="card-title text-center">Aya Ahmed</h5>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Email :</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="item">
+                                                                <p>aa@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Gender :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Female</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-danger w-100">ban</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="card py-3 px-4 rounded-4">
+                                                <img src="./../assets/images/admin.png" class="card-img-top m-auto rounded" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                                <div class="card-body">
+                                                <h5 class="card-title text-center">Shady Mohamed</h5>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Email :</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="item">
+                                                                <p>sm@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Gender :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Male</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-danger w-100">ban</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="card py-3 px-4 rounded-4 ">
+                                                <img src="./../assets/images/admin.png" class="card-img-top m-auto rounded" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                                <div class="card-body">
+                                                <h5 class="card-title text-center">Amal Mohamed</h5>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Email :</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="item">
+                                                                <p>amal@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Gender :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Female</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-danger w-100">ban</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="clients-tab-pane" role="tabpanel" aria-labelledby="clients-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="card py-3 px-4 rounded-4">
+                                                <img src="./../assets/images/client-d3d35e30.png" class="card-img-top m-auto rounded" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                                <div class="card-body">
+                                                <h5 class="card-title text-center">Mohamed Ahmed</h5>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Email :</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="item">
+                                                                <p>mohamed.ahmed@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Gender :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Male</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Age :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>25</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Job Title :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Programmer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-danger w-100">ban</button>
+                                                </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="card py-3 px-4 rounded-4">
+                                                <img src="./../assets/images/client-d3d35e30.png" class="card-img-top m-auto rounded" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                                <div class="card-body">
+                                                <h5 class="card-title text-center">Mariam Mahmoud</h5>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Email :</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="item">
+                                                                <p>mariam.mahmoud@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Gender :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Female</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Age :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>25</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Job Title :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Teacher</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-danger w-100">ban</button>
+                                                </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="card py-3 px-4 rounded-4">
+                                                <img src="./../assets/images/client-d3d35e30.png" class="card-img-top m-auto rounded" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                                <div class="card-body">
+                                                <h5 class="card-title text-center">Ahmed Elsayed</h5>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Email :</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="item">
+                                                                <p>ahmed.elsayed@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Gender :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Male</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Age :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>25</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Job Title :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Doctor</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-danger w-100">ban</button>
+                                                </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="card py-3 px-4 rounded-4">
+                                                <img src="./../assets/images/client-d3d35e30.png" class="card-img-top m-auto rounded" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                                <div class="card-body">
+                                                <h5 class="card-title text-center">Fatma Hassan</h5>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Email :</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="item">
+                                                                <p>fatma.hassan@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Gender :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Female</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Age :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>25</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Job Title :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>HR Specialist</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-danger w-100">ban</button>
+                                                </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="item">
+                                            <div class="card py-3 px-4 rounded-4">
+                                                <img src="./../assets/images/client-d3d35e30.png" class="card-img-top m-auto rounded" alt="..." style="width: 35%;" data-bs-target="#editphoto" data-bs-toggle="model">
+                                                <div class="card-body">
+                                                <h5 class="card-title text-center">Karim Mohamed</h5>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Email :</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="item">
+                                                                <p>karim.mohamed@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Gender :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Male</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Age :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>25</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item">
+                                                            <h6>Job Title :</h6>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-8">
+                                                    <div class="item">
+                                                        <p>Graphic Designer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-danger w-100">ban</button>
+                                                </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="products-tab-pane" role="tabpanel" aria-labelledby="products-tab" tabindex="0">
+                                <div class="table-responsev">
+                                    <table class="table table-info table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Title</th>
+                                            <th scope="col">price</th>
+                                            <th scope="col">quantity</th>
+                                            <th scope="col">status</th>
+                                            <th scope="col">create_at</th>
+                                            <th scope="col">opetions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>Nike Air Max 270</td>
+                                            <td>5200</td>
+                                            <td>15</td>
+                                            <td><span class="badge text-bg-success">Available</span></td>
+                                            <td>2026-06-10</td>
+                                            <td>
+                                                <div class="buttons">
+                                                    <button class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                                                    <button class="btn btn-danger text-light"
+                                                    onclick="deleteProduct()">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2</th>
+                                            <td>Adidas Ultraboost 5</td>
+                                            <td>6800</td>
+                                            <td>8</td>
+                                            <td><span class="badge text-bg-success">Available</span></td>
+                                            <td>2026-06-9</td>
+                                            <td>
+                                                <div class="buttons">
+                                                    <button class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                                                    <button class="btn btn-danger text-light">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Puma RS-X</td>
+                                            <td>4300</td>
+                                            <td>12</td>
+                                            <td><span class="badge text-bg-success">Available</span></td>
+                                            <td>2026-06-8</td>
+                                            <td>
+                                                <div class="buttons">
+                                                    <button class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                                                    <button class="btn btn-danger text-light">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>New Balance 574</td>
+                                            <td>3900</td>
+                                            <td>0</td>
+                                            <td><span class="badge text-bg-danger">Out of stock</span></td>
+                                            <td>2026-06-10</td>
+                                            <td>
+                                                <div class="buttons">
+                                                    <button class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                                                    <button class="btn btn-danger text-light">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>5</th>
+                                            <td>Skechers Go Walk 7</td>
+                                            <td>3100</td>
+                                            <td>20</td>
+                                            <td><span class="badge text-bg-success">Available</span></td>
+                                            <td>2026-06-6</td>
+                                            <td>
+                                                <div class="buttons">
+                                                    <button class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                                                    <button class="btn btn-danger text-light">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>6</th>
+                                            <td>Nike Revolution 8</td>
+                                            <td>2800</td>
+                                            <td>25</td>
+                                            <td><span class="badge text-bg-success">Available</span></td>
+                                            <td>2026-06-5</td>
+                                            <td>
+                                                <div class="buttons">
+                                                    <button class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                                                    <button class="btn btn-danger text-light">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>7</th>
+                                            <td>Adidas Runfalcon 5</td>
+                                            <td>2800</td>
+                                            <td>18</td>
+                                            <td><span class="badge text-bg-success">Available</span></td>
+                                            <td>2026-06-4</td>
+                                            <td>
+                                                <div class="buttons">
+                                                    <button class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                                                    <button class="btn btn-danger text-light">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>8</th>
+                                            <td>Converse Chuck Taylor</td>
+                                            <td>3500</td>
+                                            <td>0</td>
+                                            <td><span class="badge text-bg-danger">Out of stock</span></td>
+                                            <td>2026-06-3</td>
+                                            <td>
+                                                <div class="buttons">
+                                                    <button class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                                                    <button class="btn btn-danger text-light">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>9</th>
+                                            <td>Vans Old Skool</td>
+                                            <td>3300</td>
+                                            <td>10</td>
+                                            <td><span class="badge text-bg-success">Available</span></td>
+                                            <td>2026-06-2</td>
+                                            <td>
+                                                <div class="buttons">
+                                                    <button class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                                                    <button class="btn btn-danger text-light">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>10</th>
+                                            <td>Under Armour Charged Assert</td>
+                                            <td>4700</td>
+                                            <td>7</td>
+                                            <td><span class="badge text-bg-success">Available</span></td>
+                                            <td>2026-06-1</td>
+                                            <td>
+                                                <div class="buttons">
+                                                    <button class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#edit">Edit</button>
+                                                    <button class="btn btn-danger text-light">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- ModalName -->
+    <div class="modal fade" id="editName" tabindex="-1" aria-labelledby="editNameLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editNameLabel">Edit Name</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Name :</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                            <button class="btn btn-info text-light mt-3 ms-auto d-block">Edit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ModalEmail -->
+    <div class="modal fade" id="editEmail" tabindex="-1" aria-labelledby="editEmailLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editEmailLabel">Edit Email</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Email :</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                            <button class="btn btn-info text-light mt-3 ms-auto d-block">Edit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ModalPassword -->
+    <div class="modal fade" id="editPassword" tabindex="-1" aria-labelledby="editPasswordLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editPasswordLabel">Edit Password</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Password :</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                            <button class="btn btn-info text-light mt-3 ms-auto d-block">Edit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ModalGender -->
+    <div class="modal fade" id="editgender" tabindex="-1" aria-labelledby="editgenderLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editgenderLabel">Edit Gender</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Gender :</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                            <button class="btn btn-info text-light mt-3 ms-auto d-block">Edit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ModalEdit -->
+    <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editLabel">Edit Product</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Title :</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                            <label for="">Price :</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                            <label for="">Quantity :</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                            <button class="btn btn-info text-light mt-3 ms-auto d-block">Edit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./../assets/js/bootstarp.min.js"></script>
+    <script src="./../assets/js/index.js"></script>
+</body>
+</html>
